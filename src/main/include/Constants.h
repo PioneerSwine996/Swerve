@@ -9,6 +9,7 @@
 #include <units/torque.h>
 #include <units/base.h>
 
+
 namespace physical
 {
     // Alignment constants, for each swerve module.  Specified on [-2048, 2048)
@@ -66,14 +67,18 @@ namespace physical
     constexpr units::meter_t kWheelBase = 23.75_in;
 
     // CAN ID and Digital I/O Port assignments.
-    constexpr int kFrontLeftDriveMotorCanID = 1;
-    constexpr int kFrontLeftTurningMotorCanID = 2;
-    constexpr int kFrontRightDriveMotorCanID = 3;
-    constexpr int kFrontRightTurningMotorCanID = 4;
-    constexpr int kRearLeftDriveMotorCanID = 5;
-    constexpr int kRearLeftTurningMotorCanID = 6;
-    constexpr int kRearRightDriveMotorCanID = 7;
-    constexpr int kRearRightTurningMotorCanID = 8;
+    constexpr int kFrontLeftDriveMotorCanID = 16;
+    constexpr int kFrontLeftTurningMotorCanID = 15;
+
+    constexpr int kFrontRightDriveMotorCanID = 12;
+    constexpr int kFrontRightTurningMotorCanID = 11;
+
+    constexpr int kRearLeftDriveMotorCanID = 4;
+    constexpr int kRearLeftTurningMotorCanID = 18;
+
+    constexpr int kRearRightDriveMotorCanID = 13;
+    constexpr int kRearRightTurningMotorCanID = 14;
+
     constexpr int kFrontLeftTurningEncoderPort = 0;
     constexpr int kFrontRightTurningEncoderPort = 1;
     constexpr int kRearLeftTurningEncoderPort = 2;
